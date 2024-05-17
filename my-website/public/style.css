@@ -1,0 +1,18 @@
+body {
+    margin:0;
+    padding:0;
+    background-image: url(images/stacked-pebbles-uhd-4k-wallpaper.jpg);
+    background-size: 125%;
+    background-position: center;
+  }
+  
+  form {
+    display: inline-block;
+    text-align: left;
+  }
+  
+  label, input {
+    display: block;
+    margin-bottom: 10px;
+  }
+  

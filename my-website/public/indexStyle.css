@@ -1,0 +1,193 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: "Chewy";
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px 80px;
+    padding-left: 0px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#navbar{
+ z-index: inherit;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+#navbar li{
+   
+    list-style: none;
+    padding: 0 50px;
+    font-size: 30px;
+position: relative;
+
+}
+#navbar li a{
+    text-decoration: none;
+   color: grey; 
+}
+#navbar li a:hover{
+    color: black;
+    
+}
+#navbar li a.active{
+    color: #000;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+position: absolute;
+background-color: #000;
+
+}
+#featured{
+    background-image: url(images/banner/rockbg.jpg) ;
+    height: 90vh;
+    width:91;
+    background-position: center top;
+    background-size: cover;
+    padding: 0 80px; 
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    color:white;
+}
+#featured h1{
+ font-size: 100px;
+}
+#featured h2{
+    font-size: 50px;
+}
+
+.padding-p1{
+    padding: 40px 80px;
+}
+#featuredPeddle{
+text-align: center;
+}
+#featuredPeddle .product{
+width:23%;
+min-width: 250px;
+padding:10px 12px;
+border:1px solid;
+border-radius: 25px;
+box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+cursor: pointer;
+margin-bottom: 20px;
+}
+#featuredPeddle .product img{
+    width :100%;
+    border:1px solid;
+    border-radius: 20px;
+}
+#featuredPeddle .product:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06); ;
+}
+#featuredPeddle .product .description{
+ text-align: left;
+ padding: 10px 0;
+}
+
+#featuredPeddle .container{
+display:flex;
+justify-content: space-between;
+padding: 20px 0;
+flex-wrap: wrap;
+}
+#support{
+    margin: 40px 0 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-image: url("images/banner/petermann-island-rock-3-large.jpg");
+    height:40vh;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+}
+#support h2{
+    color:white;
+    font-size: 30px;
+    padding :10px 0;
+
+}
+button.normal{
+font-size: 14px;
+font-weight:600;
+padding: 15px 30px;
+color: #000;
+background-color: white;
+outline: none;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+}
+button.normal:hover{
+    background-color: #000;
+color:white;
+}
+#NewsLetter{
+    background-image: url(images/banner/wp2600349.jpg);
+    margin: 40px 0;
+    height:40vh;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+}
+footer {
+    
+    background-color: white;
+
+  }
+  footer ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  footer ul li{
+    display: inline-block;
+    padding: 0px 15px;
+  }
+  footer p{
+    
+    margin-top: 0px;
+    margin-bottom: 1px;
+    text-align: center;
+    font-size: 13px;
+    color: rgb(127, 121, 121);
+  }
+footer ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  footer ul li a:hover {
+    opacity: 1;
+       border-bottom: 1px solid black;
+  }
+  #footlink:hover{
+    color : rgb(112, 111, 111);
+    font-size: 1.2em;
+    text-transform: lowercase;
+  }
+  #footlink:visited{
+    color: rgb(138, 135, 135);
+  }
+  

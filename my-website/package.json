@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "mime": "^4.0.3",
+    "mime-type": "^4.0.0",
+    "mime-types": "^2.1.35",
+    "sqlite3": "^5.1.7"
+  }
+}
