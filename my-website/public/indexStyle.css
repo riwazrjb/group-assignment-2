@@ -3,7 +3,12 @@
     padding:0px;
     font-family: "Chewy";
 }
-
+html{
+    scroll-behavior:smooth;
+}
+h2{
+    font-size: 50px;
+}
 #header{
     display: flex;
     align-items: center;
@@ -49,7 +54,7 @@ background-color: #000;
 
 }
 #featured{
-    background-image: url(images/banner/rockbg.jpg) ;
+    background-image: url(images/banner/sea-relaxation-water-235990\ \(1\).jpg) ;
     height: 90vh;
     width:91;
     background-position: center top;
@@ -88,6 +93,36 @@ margin-bottom: 20px;
     width :100%;
     border:1px solid;
     border-radius: 20px;
+}
+.cart{
+    border-radius: 40px;
+    border: 0;
+    text-transform: uppercase;
+    font-size: 1.8rm;
+    font-weight: 600;
+    margin:1rem 0;
+    padding: 10px ;
+    white-space: nowrap;
+    cursor:pointer;
+    display: inline-block;
+    width:95%;
+    border: 1px solid;
+    transition: 0.5s;
+}
+.description p:not(.price){
+    color: gray;
+}
+.price{
+    font-size: 18px;
+    color: #000;
+    font-style: italic;
+}
+.description span{
+    font-size: 20px;
+}
+.cart:hover{
+    color: aliceblue;
+    background-color: #000;
 }
 #featuredPeddle .product:hover{
     box-shadow: 20px 20px 30px rgba(0,0,0,0.06); ;
@@ -130,6 +165,7 @@ color: #000;
 background-color: white;
 outline: none;
 border: none;
+font-size: 20px;
 cursor: pointer;
 border-radius: 5px;
 }
@@ -138,13 +174,46 @@ button.normal:hover{
 color:white;
 }
 #NewsLetter{
-    background-image: url(images/banner/wp2600349.jpg);
+    background-image: url(images/banner/71262991.jpg);
     margin: 40px 0;
     height:40vh;
     width:100%;
     background-size: cover;
     background-position: center;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-position: center;
+    position: relative;
+    
 }
+.form input {
+    font-size: 18px;
+    width:60px;
+    border:1px solid black;
+    padding:8px 10px;
+    border-radius: 5px;
+    width:60%;
+
+}
+.form button{
+    color:#000;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding:8px 10px;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.form button:hover{
+    color: white;
+    background-color: #000;
+}
+
 footer {
     
     background-color: white;
