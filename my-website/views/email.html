@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In</title>
+  <link rel="stylesheet" href="../public/style.css">
+</head>
+<body>
+<div class ="format5">
+  <h1>Get In Touch</h1>
+  
+  <form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="933f1371-071e-4d7b-8e6a-03c1f0878416">
+    <input type="text" id="username" name="name" required class = "input-box" placeholder="Enter your username">
+    
+    <input type="email"  name="email" required class = "input-box" placeholder="Enter your email">
+
+    <textarea row = "4" cols="60" name="message" class="input-box"placeholder="Enter Your message" required></textarea>
+    
+    <button type="submit" class="signBtn">Submit</button>
+  </form>
+  <hr>
+  <button onclick="location.href='/'" class="signBtn">Back to Home</button>
+</div>
+
+</body>
+</html>
+

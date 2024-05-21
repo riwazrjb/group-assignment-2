@@ -13,6 +13,9 @@ app.use('/public', express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Define routes
+app.get('/email', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views', 'email.html'));
+});
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });
@@ -31,7 +34,14 @@ app.post('/signup', (req, res) => {
     if (err) {
       res.status(500).send("Error saving to database.");
     } else {
-      res.send("Signup successful!");
+      res.send(`
+        <html>
+          <body>
+            <h1>Signup successful!</h1>
+            <p>You can now <a href="/signin">sign in</a>.</p>
+          </body>
+        </html>
+      `);
     }
   });
 });
@@ -42,9 +52,23 @@ app.post('/signin', (req, res) => {
     if (err) {
       res.status(500).send("Error querying the database.");
     } else if (row) {
-      res.send("Sign-in successful!");
+      res.send(`
+      <html>
+        <body>
+          <h1>SignIn successful!</h1>
+          <p>You can now go to <a href="/">Home page</a>.</p>
+        </body>
+      </html>
+    `);
     } else {
-      res.status(401).send("Invalid username or password.");
+      res.status(401).send(`
+      <html>
+        <body>
+          <h1>Incorrect username or password</h1>
+          <p>please try again<a href="/signin">sign in</a>.</p>
+        </body>
+      </html>
+    `);
     }
   });
 });

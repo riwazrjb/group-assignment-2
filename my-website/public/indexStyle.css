@@ -259,4 +259,17 @@ footer ul li a {
   #footlink:visited{
     color: rgb(138, 135, 135);
   }
-  
+  #productInfo5 .BigImage{
+    width: 40%;
+    margin-right:50% ;
+    
+  }
+  #productInfo5{
+    
+    display: flex;
+    margin-top: 20px;
+  }
+  #productInfo5 .proDetail{
+    width:50%;
+    padding-top:30px;
+  }
