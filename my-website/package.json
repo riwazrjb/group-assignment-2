@@ -1,4 +1,11 @@
 {
+  "name": "mywebsite",
+  "version": "1.0.0",
+  "description": "A simple Express app for signup and signin",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
   "dependencies": {
     "body-parser": "^1.20.2",
     "express": "^4.19.2",
@@ -6,5 +13,7 @@
     "mime-type": "^4.0.0",
     "mime-types": "^2.1.35",
     "sqlite3": "^5.1.7"
-  }
+  },
+  "author": "",
+  "license": "ISC"
 }
